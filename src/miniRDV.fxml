@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="miniRDVController">
+   <children>
+      <AnchorPane prefHeight="65.0" prefWidth="69.0">
+         <children>
+            <ButtonBar fx:id="minirdv" onDragDetected="#showRDV" prefHeight="66.0" prefWidth="77.0" AnchorPane.leftAnchor="-2.0">
+               <buttons>
+                  <AnchorPane prefHeight="66.0" prefWidth="69.0" style="-fx-background-color: #00ced0; -fx-background-radius: 10;">
+                     <children>
+                        <Label layoutX="7.0" layoutY="11.0" text="Rendez-Vous" textFill="WHITE">
+                           <font>
+                              <Font name="Arial" size="9.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="debut" layoutX="7.0" layoutY="29.0" text="De : 08:00" textFill="WHITE">
+                           <font>
+                              <Font name="Arial" size="8.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="fin" layoutX="7.0" layoutY="44.0" text="À : 09:00" textFill="WHITE">
+                           <font>
+                              <Font name="Arial" size="8.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </buttons>
+               <padding>
+                  <Insets left="-8.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ButtonBar>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="provisController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="test" mnemonicParsing="false" onAction="#creerTest" text="Creer test" />
+            <Button fx:id="question" mnemonicParsing="false" onAction="#creerQuestion" text="Creer question" />
+            <Button fx:id="exercice" mnemonicParsing="false" onAction="#creerExercice" text="Creer exercice" />
+            <Button fx:id="modifierEx" mnemonicParsing="false" onAction="#modifierExercice" text="Modifer exercice" />
+            <Button fx:id="modifierQuest" mnemonicParsing="false" onAction="#modifierQuestion" text="Modifier question" />
+            <Button fx:id="modifTest" mnemonicParsing="false" onAction="#modifierTest" text="Modifier test" />
+            <Button fx:id="dossier" mnemonicParsing="false" onAction="#creerDossier" text="Creer dossier " />
+            <Button fx:id="dossier1" mnemonicParsing="false" onAction="#afficherDossier" text="afficher dossiers" />
+            <Button fx:id="troubles" mnemonicParsing="false" onAction="#afficherTrouble" text="trouble" />
+            <Button fx:id="rdv" mnemonicParsing="false" onAction="#afficherRDV" text="rdv de suivi" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
